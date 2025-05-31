@@ -1,28 +1,44 @@
-# Title: ########50 characters###################
-# Summarize the changes concisely.
-# Example: Fix issue with user login process
+# Title (max. 50 characters)
+# Summarize the changes concisely using the imperative mood.
+# Format: <type>: <subject>
+# Example: fix: fix login issue
 
-# Body: Explain *what* and *why* (not *how*). ########72 characters####
-# Provide a detailed description of the changes made and their purpose.
+# Message Body (max. 72 characters per line)
+# Explain *what* was changed and *why* (not how).
+# Separate paragraphs with a blank line.
+
 # Example:
 #
-# Fix issue with user login process by updating
-# the authentication method. The previous method
-# was not compatible with the new security requirements.
+# Fix issue in the user login flow
+# by adjusting the authentication logic. The previous method
+# did not comply with the new security requirements.
 #
-# - Bullets are fine too
-# - Typically a dash or asterisk is used for the bullets
-# - Followed by a single space, with blank lines in between
-# - Using a hanging indentation
+# - Use bullet points to list changes
+# - Prefer "-" or "*", followed by a space
+# - Leave a blank line between idea groups
 
-# Github issue #123 (Optional)
-# Include any related issue numbers, for example:
+# Related issue (optional)
 # Closes #123
 
-# Note:
-# Special instructions, testing steps, rake tasks, etc.
+# Special Note (optional)
 # Example:
-# - Include instructions for running specific tests
+# - Run `rake db:migrate`
+# - Check token in environment variables
 
-# At the end: Include Co-authored-by for all contributors.
-# Co-authored-by: name <user@users.noreply.github.com>
+# Co-authorship (optional)
+# Co-authored-by: Full Name <email@example.com>
+
+# Recommended title types:
+# feat: New feature
+# fix: Bug fix
+# refactor: Code refactoring
+# style: Formatting changes without affecting logic
+# docs: Documentation updates
+# test: Add or improve tests
+# chore: General maintenance or auxiliary tasks
+# perf: Performance improvement
+# ci: Continuous integration configuration
+# build: Build process or dependency changes
+# revert: Revert a previous commit
+# wip: Work in progress
+# hack: Temporary workaround; avoid if possible

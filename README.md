@@ -1,112 +1,109 @@
-# Git Message Template
+# Git Commit Message Template
 
-This repository contains a Git message template designed to help standardize and streamline commit messages across your projects. Consistent and clear commit messages are essential for maintaining a readable and maintainable project history.
-
-## Description
-
-Some tips so that the content of our commits is precise, easy to write, easy to read, and easy to interpret.
+This repository contains a Git commit message template designed to help standardize and streamline commit messages in your projects. Consistent and clear commit messages are essential to maintaining a readable and maintainable project history. This template provides a simple, easy-to-follow structure for writing meaningful commit messages. It is based on the recommendations of [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ## Tips for Git Messages
 
-1. Separate the title from the description using a blank line.
-2. The title must not contain more than 50 characters.
+1. Separate the title from the description with a blank line.
+2. The title should not exceed 50 characters.
 3. Capitalize the first word of the title.
 4. Do not end the title with a period.
 5. Use the imperative mood in the title line.
-6. The description must not contain more than 72 characters per line.
-7. Use the description to explain what and why versus how.
+6. The description should not exceed 72 characters per line.
+7. Use the description to explain _what_ and _why_, instead of _how_.
 
 ### Recommended Title Types
 
 - **feat**: New feature
 - **fix**: Bug fix
-- **refactor**: Refactoring code
-- **style**: Formatting, missing semi-colons, etc.; no code change
-- **docs**: Changes to documentation
-- **test**: Adding or refactoring tests; no production code change
+- **refactor**: Code refactoring
+- **style**: Formatting, missing commas, etc.; no code changes
+- **docs**: Documentation changes
+- **test**: Add or refactor tests; no production code changes
 - **chore**: Changes to the build process or auxiliary tools and libraries such as documentation generation
 - **perf**: Code change that improves performance
-- **ci**: Changes to our CI configuration files and scripts (e.g., GitHub Actions, CircleCI)
+- **ci**: Changes to CI configuration files and scripts (e.g., GitHub Actions, CircleCI)
 - **build**: Changes that affect the build system or external dependencies (e.g., gulp, broccoli, npm)
 - **revert**: Reverts a previous commit
-- **wip**: Work In Progress; for intermediate commits to keep patches reasonably sized
-- **hack**: Temporary fix to make things move forward; please avoid it
+- **wip**: Work in progress; for intermediate commits to keep patches reasonably sized
+- **hack**: Temporary workaround to move forward; avoid if possible
 
 ## Commit Structure
 
 ### Title (Subject Line)
 
-- **Purpose**: Summarizes the changes concisely.
+- **Purpose**: Summarize changes concisely.
 - **Format**: `<type>: <subject>`
 - **Example**:
 
-```markdown
+```bash
 feat: add user authentication
 ```
 
 ### Body (Detailed Description)
 
-- **Purpose**: Provides a more detailed explanation of the changes made and why they were made.
+- **Purpose**: Provide a more detailed explanation of the changes made and why.
 - **Format**: Use the imperative mood (e.g., "Add", "Fix", "Update"). Wrap text at 72 characters. Separate paragraphs with a blank line.
 - **Example**:
 
-```markdown
-Fix issue with user login process by updating
-the authentication method. The previous method
-was not compatible with the new security requirements.
+```bash
+Fix issue with the user login process
+by updating the authentication method. The previous method
+was not compatible with new security requirements.
 
-This fix ensures that users can log in without errors
-and improves the overall security of the application.
+This fix ensures users can log in
+without errors and improves overall application security.
 ```
 
 ### Footer (Optional)
 
-- **Purpose**: Includes any additional information, such as related issue numbers or references.
-- **Format**: Use keywords like `Closes`, `Fixes`, `Refs`, followed by the issue number.
+- **Purpose**: Include any additional information, such as related issue numbers or references.
+- **Format**: Use keywords like `Closes`, `Fixes`, `Refs` followed by the issue number.
 - **Example**:
 
-```markdown
+```bash
 Closes #123
 ```
 
 ### Note
 
-- **Purpose**: Special instructions, testing steps, rake tasks, etc.
+- **Purpose**: Special instructions, test steps, rake tasks, etc.
 - **Example**:
 
-```markdown
+```bash
 Note:
-Special instructions, testing steps, rake, etc.
+Special instructions, test steps, rake tasks, etc.
 ```
 
-### Co-authored-by
+### Co-author
 
-- **Purpose**: Include for all contributors at the end of the commit message.
+- **Purpose**: Include all contributors at the end of the commit message.
 - **Format**: `Co-authored-by: name <user@users.noreply.github.com>`
 - **Example**:
 
-```markdown
+```bash
 Co-authored-by: John Doe <john.doe@example.com>
 ```
 
 ## Example Commit Message
 
-```markdown
+```bash
 feat: add user authentication
 
-Add a new feature for user authentication using JWT. This feature allows
-users to securely log in and receive a token for subsequent requests.
+Add a new feature for user authentication
+using JWT. This feature allows users to log in
+securely and receive a token for subsequent requests.
 
-- Implemented JWT-based authentication
-- Added middleware to protect routes
-- Updated user model to include authentication methods
+- Implement JWT-based authentication
+- Add middleware to protect routes
+- Update user model with authentication methods
 
 Closes #45
 
 Note:
 
-- Remember to update environment variables with JWT secret key.
-- Ensure database migrations are applied before testing.
+- Update environment variables with the secret key.
+- Apply database migrations.
 
 Co-authored-by: Jane Doe <jane.doe@example.com>
 ```
@@ -119,13 +116,13 @@ Co-authored-by: Jane Doe <jane.doe@example.com>
 git clone git@github.com:brayandiazc/template-gitmessage.git
 ```
 
-2. Navigate to the Root Directory: Change to the directory where you cloned the repository.
+2. Navigate to the Root Directory: Move to the directory where you cloned the repository.
 
 ```bash
 cd template-gitmessage
 ```
 
-3. Copy the Template File: Copy the .gitmessage file to your root directory.
+3. Copy the Template File: Copy the .gitmessage file to your home directory.
 
 ```bash
 cp .gitmessage ~
