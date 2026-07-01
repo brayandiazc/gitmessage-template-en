@@ -134,6 +134,19 @@ cp .gitmessage ~
 git config --global commit.template ~/.gitmessage
 ```
 
+## Contributing
+
+Contributions are welcome. Before you start, take a look at:
+
+- [Contributing Guide](CONTRIBUTING.md) — workflow and commit format.
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Security Policy](SECURITY.md)
+- [Changelog](CHANGELOG.md)
+
+## Documentation
+
+Supporting documentation lives in [`docs/`](docs/README.md): [roadmap](docs/product/roadmap.md) and [decisions (ADRs)](docs/decisions/README.md).
+
 ## Author
 
 - [Brayan Diaz C](https://github.com/brayandiazc)
